@@ -1,4 +1,18 @@
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+
+filetype plugin indent on
+
 syntax on
 colorscheme molokai
 set tabstop=2
@@ -16,8 +30,10 @@ set cursorcolumn
 set formatoptions=l
 set backspace=indent,eol,start
 set lbr
+" move by screen lines, not by real lines - great for creative writing
 nnoremap j gj
 nnoremap k gk
+" also in visual mode
 vnoremap j gj
 vnoremap k gk
 
