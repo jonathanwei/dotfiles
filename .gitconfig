@@ -1,0 +1,26 @@
+[user]
+  name = jonathanwei
+  email = me@jonathanwei.ca
+[core]
+  editor = vim
+[push]
+  default = simple
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[alias]
+  record = commit --interactive
