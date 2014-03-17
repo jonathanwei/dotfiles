@@ -3,6 +3,8 @@ filetype off
 
 set list
 
+let mapleader=','
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
