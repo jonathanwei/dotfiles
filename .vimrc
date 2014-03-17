@@ -36,6 +36,7 @@ set cursorcolumn
 set formatoptions=l
 set backspace=indent,eol,start
 set lbr
+set number
 " move by screen lines, not by real lines - great for creative writing
 nnoremap j gj
 nnoremap k gk
@@ -45,4 +46,10 @@ vnoremap k gk
 
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
+endif
+
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
