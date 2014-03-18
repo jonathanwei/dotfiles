@@ -17,8 +17,6 @@ Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 
-let g:ctrlp_working_path_mode = 'c'
-
 syntax on
 colorscheme molokai
 set tabstop=2
