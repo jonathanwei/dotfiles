@@ -57,15 +57,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source ~/.oh-my-zsh/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/zsh-history-substring-search.zsh
 
-# Setup zsh-autosuggestions
-source ~/.zsh-autosuggestions/autosuggestions.zsh
-
-# Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
-
 bindkey '^[OA' history-substring-search-up
 bindkey '^[OB' history-substring-search-down
 # export MANPATH="/usr/local/man:$MANPATH"
