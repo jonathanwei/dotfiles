@@ -54,11 +54,11 @@ unsetopt correct_all
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
-bindkey -v
-bindkey '^[OA' up-line-or-search
-bindkey '^[OB' down-line-or-search
-
 source ~/.oh-my-zsh/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/custom/zsh-history-substring-search.zsh
+
+bindkey '^[OA' history-substring-search-up
+bindkey '^[OB' history-substring-search-down
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
