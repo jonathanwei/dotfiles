@@ -60,7 +60,7 @@ source ~/.oh-my-zsh/custom/zsh-history-substring-search.zsh
 bindkey '^[OA' history-substring-search-up
 bindkey '^[OB' history-substring-search-down
 
-eval 'keychain --agents ssh id_rsa'
+eval 'keychain --agents ssh id_rsa 2> /dev/null'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
