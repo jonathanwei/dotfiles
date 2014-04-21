@@ -15,6 +15,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'craigemery/vim-autotag'
 
 filetype plugin indent on
 
@@ -36,6 +37,7 @@ set formatoptions=l
 set backspace=indent,eol,start
 set lbr
 set number
+set tags=./tags;
 " move by screen lines, not by real lines - great for creative writing
 nnoremap j gj
 nnoremap k gk
