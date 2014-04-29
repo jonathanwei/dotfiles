@@ -8,7 +8,7 @@ let mapleader=','
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
