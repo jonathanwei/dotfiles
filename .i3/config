@@ -10,13 +10,16 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-exec --no-startup-id xrandr --output Virtual1 --mode 1440x900
+exec --no-startup-id ~/vpn.sh &
+exec --no-startup-id nm-applet
 exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id sh ~/bg.sh &
+exec --no-startup-id gnome-settings-daemon
 
 workspace_auto_back_and_forth yes
 focus_follows_mouse no
 bindsym $mod+b bar mode toggle
+bindsym mod1+control+p exec gnome-screenshot
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
