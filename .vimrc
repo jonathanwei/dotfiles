@@ -50,6 +50,11 @@ vnoremap k gk
 nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <leader>N :NERDTreeClose<CR>
 
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
