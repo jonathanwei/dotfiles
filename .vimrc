@@ -20,6 +20,8 @@ Bundle 'mileszs/ack.vim'
 
 call vundle#end()
 
+let g:ctrlp_custom_ignore = '\v\.{o|pdf|png}$'
+
 filetype plugin indent on
 
 syntax on
