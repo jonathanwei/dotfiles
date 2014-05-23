@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'craigemery/vim-autotag'
+Bundle 'mileszs/ack.vim'
 
 call vundle#end()
 
@@ -47,6 +48,9 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
+nnoremap / /\v
+vnoremap / /\v
+
 nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <leader>N :NERDTreeClose<CR>
 
@@ -54,6 +58,10 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
+
+nnoremap <leader>s :%s/\v
+nnoremap <leader>f :Ack ""<left>
+nnoremap <leader>* yiw:Ack "<c-r>""<cr>
 
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
