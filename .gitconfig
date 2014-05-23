@@ -24,3 +24,7 @@
   untracked = cyan
 [alias]
   record = commit --interactive
+[diff]
+  external = ~/vim_diff.sh
+[pager]
+  diff =
