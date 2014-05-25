@@ -1,8 +1,6 @@
 set nocompatible
 filetype off
 
-set list
-
 let mapleader=','
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -19,8 +17,6 @@ Bundle 'craigemery/vim-autotag'
 Bundle 'mileszs/ack.vim'
 
 call vundle#end()
-
-let g:ctrlp_custom_ignore = '\v\.{o|pdf|png}$'
 
 filetype plugin indent on
 
@@ -43,6 +39,9 @@ set backspace=indent,eol,start
 set lbr
 set number
 set tags=./tags;
+set list
+set listchars=tab:»·,trail:·
+
 " move by screen lines, not by real lines - great for creative writing
 nnoremap j gj
 nnoremap k gk
