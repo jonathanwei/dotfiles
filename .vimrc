@@ -42,6 +42,11 @@ set tags=./tags;
 set list
 set listchars=tab:»·,trail:·
 
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg|db|jar|gif|cache)$',
+  \ }
+
 " move by screen lines, not by real lines - great for creative writing
 nnoremap j gj
 nnoremap k gk
