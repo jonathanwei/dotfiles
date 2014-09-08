@@ -15,6 +15,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'craigemery/vim-autotag'
 Bundle 'mileszs/ack.vim'
+Bundle 'vim-scripts/a.vim'
 
 call vundle#end()
 
