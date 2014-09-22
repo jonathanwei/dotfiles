@@ -20,6 +20,8 @@ workspace_auto_back_and_forth yes
 focus_follows_mouse no
 bindsym $mod+b bar mode toggle
 bindsym mod1+control+p exec gnome-screenshot
+bindsym mod1+control+l exec ~/lock.sh&
+bindsym $mod+m move workspace to output right
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -201,3 +203,4 @@ bar {
 }
 
 for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
