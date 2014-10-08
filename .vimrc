@@ -47,6 +47,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg|db|jar|gif|cache)$',
   \ }
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " move by screen lines, not by real lines - great for creative writing
 nnoremap j gj
