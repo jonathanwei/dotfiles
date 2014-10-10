@@ -72,9 +72,7 @@ nnoremap <leader>s :%s/\v
 nnoremap <leader>f :Ack ""<left>
 nnoremap <leader>* yiw:Ack "<c-r>""<cr>
 
-if $COLORTERM == 'gnome-terminal'
-  set t_Co=256
-endif
+set t_Co=256
 
 if exists('+colorcolumn')
   set colorcolumn=80
