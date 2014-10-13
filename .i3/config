@@ -12,7 +12,7 @@
 set $mod Mod4
 exec --no-startup-id ~/vpn.sh &
 exec --no-startup-id nm-applet
-exec --no-startup-id i3-sensible-terminal -e tmux -2
+exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id sh ~/bg.sh &
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id xautolock -time 5 -locker ~/lock.sh &
