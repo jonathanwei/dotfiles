@@ -68,6 +68,15 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
+nnoremap th :tabnext<CR>
+nnoremap tl :tabprev<CR>
+nnoremap tj :tablast<CR>
+nnoremap tk :tabfirst<CR>
+nnoremap tt :tabedit<Space>
+nnoremap tn :tabnew<Space>
+nnoremap tm :tabm<Space>
+nnoremap td :tabclose<CR>
+
 nnoremap <leader>s :%s/\v
 nnoremap <leader>f :Ack ""<left>
 nnoremap <leader>* yiw:Ack "<c-r>""<cr>
