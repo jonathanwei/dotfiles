@@ -68,8 +68,8 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
-nnoremap th :tabnext<CR>
-nnoremap tl :tabprev<CR>
+nnoremap th :tabprev<CR>
+nnoremap tl :tabnext<CR>
 nnoremap tj :tablast<CR>
 nnoremap tk :tabfirst<CR>
 nnoremap tt :tabedit<Space>
