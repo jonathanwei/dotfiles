@@ -82,6 +82,7 @@ nnoremap <leader>f :Ack ""<left>
 nnoremap <leader>* yiw:Ack "<c-r>""<cr>
 
 set t_Co=256
+set t_ut=
 
 if exists('+colorcolumn')
   set colorcolumn=80
