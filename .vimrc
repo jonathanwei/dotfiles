@@ -43,6 +43,7 @@ set number
 set tags=./tags;
 set list
 set listchars=tab:»·,trail:·
+set nojoinspaces
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
