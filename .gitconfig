@@ -3,6 +3,7 @@
   email = me@jonathanwei.ca
 [core]
   editor = vim
+  excludesfile = /home/pear/.gitignore_global
 [push]
   default = simple
 [alias]
