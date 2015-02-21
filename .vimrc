@@ -81,6 +81,8 @@ nnoremap <leader>s :%s/\v
 nnoremap <leader>f :Ack ""<left>
 nnoremap <leader>* yiw:Ack "<c-r>""<cr>
 
+nmap <F1> <nop>
+
 set t_Co=256
 set t_ut=
 
