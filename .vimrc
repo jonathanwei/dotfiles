@@ -43,6 +43,10 @@ set tags=./tags;
 set list
 set listchars=tab:»·,trail:·
 set nojoinspaces
+set undofile
+set undodir=~/.vim/undo
+set undolevels=1000
+set undoreload=10000
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
