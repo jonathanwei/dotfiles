@@ -55,6 +55,19 @@ function o() {
 alias tmux='tmux -2'
 alias rsync='rsync -hP'
 
+if [ -n "$TMUX" ]; then
+  function refresh {
+    export $(tmux show-environment | grep "^SSH_AUTH_SOCK")
+    export $(tmux show-environment | grep "^DISPLAY")
+  }
+else
+  function refresh { }
+fi
+
+function preexec {
+  refresh
+}
+
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
