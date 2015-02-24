@@ -44,9 +44,11 @@ set list
 set listchars=tab:»·,trail:·
 set nojoinspaces
 set undofile
-set undodir=~/.vim/undo
 set undolevels=1000
 set undoreload=10000
+set undodir=~/.vim/tmp,.
+set backupdir=~/.vim/tmp,.
+set directory=~/.vim/tmp,.
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
