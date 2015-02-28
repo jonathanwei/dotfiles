@@ -32,8 +32,6 @@ set laststatus=2
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 let c_space_errors=1
 set incsearch
-set smartcase
-set ignorecase
 set cursorcolumn
 set formatoptions=l
 set backspace=indent,eol,start
@@ -63,8 +61,8 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
-nnoremap / /\v
-vnoremap / /\v
+nnoremap / /\c
+vnoremap / /\c
 
 nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <leader>N :NERDTreeClose<CR>
