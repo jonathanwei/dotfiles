@@ -17,6 +17,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'craigemery/vim-autotag'
 Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/a.vim'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 
