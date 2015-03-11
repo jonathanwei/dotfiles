@@ -55,6 +55,12 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ycm_autoclose_preview_window_after_completion = 1
 
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': ['scala'] }
+
+let g:tex_indent_items=0
+
 " move by screen lines, not by real lines - great for creative writing
 nnoremap j gj
 nnoremap k gk
