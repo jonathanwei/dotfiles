@@ -15,7 +15,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id sh ~/bg.sh &
 exec --no-startup-id gnome-settings-daemon
-exec --no-startup-id compton -bfCG -D 5 --vsync opengl-swc --backend glx --glx-no-stencil --detect-client-opacity --unredir-if-possible
+exec --no-startup-id compton -bfCG -D 5 -i 0.8 -e 1.0 --active-opacity 1 --vsync opengl-swc --backend glx --glx-no-stencil --detect-client-opacity --unredir-if-possible
 exec --no-startup-id xset r rate 200 50
 
 workspace_auto_back_and_forth yes
