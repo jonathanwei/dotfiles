@@ -45,7 +45,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mercurial)
+plugins=(git mercurial vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -69,7 +69,10 @@ function preexec {
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export KEYTIMEOUT=1
+export EDITOR=vim
+export VISUAL=vim
 
 source ~/.oh-my-zsh/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/zsh-history-substring-search.zsh
@@ -91,6 +94,9 @@ bindkey -M emacs '^N' history-substring-search-down
 # bind k and j for VI mode
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+
+set -o vi
+
 
 HISTSIZE=130000 SAVEHIST=130000
 
