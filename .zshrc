@@ -92,6 +92,8 @@ bindkey -M emacs '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
+HISTSIZE=130000 SAVEHIST=130000
+
 eval 'keychain --agents ssh id_rsa 2> /dev/null'
 # export MANPATH="/usr/local/man:$MANPATH"
 
