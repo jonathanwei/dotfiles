@@ -10,25 +10,27 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-exec --no-startup-id ~/vpn.sh &
-exec --no-startup-id nm-applet
+exec --no-startup-id sh ~/util/vpn.sh &
+exec --no-startup-id nm-applet &
 exec --no-startup-id i3-sensible-terminal
-exec --no-startup-id sh ~/bg.sh &
+exec --no-startup-id sh ~/util/bg.sh &
 exec --no-startup-id gnome-settings-daemon
-exec --no-startup-id compton -bfCG -D 5 -i 0.8 -e 1.0 --active-opacity 1 --vsync opengl-swc --backend glx --glx-no-stencil --detect-client-opacity
-exec --no-startup-id xset r rate 200 50
+exec --no-startup-id xset r rate 200 25
+exec --no-startup-id setxkbmap -option ctrl:nocaps
+exec --no-startup-id nvidia-settings -l
+exec --no-startup-id dispad start
 
 workspace_auto_back_and_forth yes
 focus_follows_mouse no
 bindsym $mod+b bar mode toggle
 bindsym mod1+control+p exec gnome-screenshot
-bindsym mod1+control+l exec ~/lock.sh&
+bindsym mod1+control+l exec ~/util/lock.sh&
 bindsym $mod+m move workspace to output right
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango:DejaVu Sawasdee 10
+font pango:DejaVu Sawasdee 14
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
@@ -185,7 +187,7 @@ bindsym $mod+r mode "resize"
 #    position top
 #}
 bar {
-    font pango:DejaVu Sans Mono 10
+    font pango:DejaVu Sans Mono 14
     position top
     colors {
         background #000000
