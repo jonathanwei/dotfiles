@@ -69,7 +69,7 @@ function preexec {
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/util"
 export KEYTIMEOUT=1
 export EDITOR=vim
 export VISUAL=vim
