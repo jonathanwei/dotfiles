@@ -4,5 +4,5 @@ for rarfile in "$@"
 do
   exdir="${rarfile%.rar}"
   mkdir "$exdir"
-  unrar e "$rarfile" "$exdir"
+  unrar x "$rarfile" "$exdir"
 done
