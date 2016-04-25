@@ -2,7 +2,8 @@
 
 for rarfile in "$@"
 do
-  exdir="${rarfile%.rar}"
-  mkdir "$exdir"
-  unrar x "$rarfile" "$exdir"
+  (exdir="${rarfile%.rar}"
+   mkdir "$exdir"
+   unrar x "$rarfile" "$exdir") &
 done
+wait

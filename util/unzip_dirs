@@ -2,7 +2,8 @@
 
 for zipfile in "$@"
 do
-  exdir="${zipfile%.zip}"
-  mkdir "$exdir"
-  unzip -d "$exdir" "$zipfile"
+  (exdir="${zipfile%.zip}"
+   mkdir "$exdir"
+   unzip -d "$exdir" "$zipfile") &
 done
+wait
