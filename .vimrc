@@ -48,6 +48,7 @@ set undoreload=10000
 set undodir=~/.vim/tmp,.
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
+set wildignorecase
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
