@@ -77,6 +77,7 @@ export VISUAL=vim
 source ~/.oh-my-zsh/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/zsh-history-substring-search.zsh
 source ~/.oh-my-zsh/custom/opp.zsh
+source ~/.oh-my-zsh/custom/better-completion.zsh
 
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo
